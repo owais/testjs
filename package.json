@@ -1,0 +1,19 @@
+{
+  "name": "@ezhome/xxx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owais/testjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owais/testjs/issues"
+  },
+  "homepage": "https://github.com/owais/testjs#readme"
+}
