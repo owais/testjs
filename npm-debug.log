@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/iojs',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'unpublish',
+1 verbose cli   '--force' ]
+2 info using npm@2.14.2
+3 info using node@v3.3.0
+4 warn using --force I sure hope you know what you are doing.
+5 silly unpublish args[0] undefined
+6 silly unpublish thing {}
+7 verbose unpublish { name: '@ezhome/xxx',
+7 verbose unpublish   version: '1.0.0',
+7 verbose unpublish   description: '',
+7 verbose unpublish   main: 'index.js',
+7 verbose unpublish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+7 verbose unpublish   repository: { type: 'git', url: 'git+https://github.com/owais/testjs.git' },
+7 verbose unpublish   author: '',
+7 verbose unpublish   license: 'ISC',
+7 verbose unpublish   bugs: { url: 'https://github.com/owais/testjs/issues' },
+7 verbose unpublish   homepage: 'https://github.com/owais/testjs#readme',
+7 verbose unpublish   gitHead: '554730edfe9ca444bd8d8f7a94ccd626936e87be',
+7 verbose unpublish   readme: 'ERROR: No README data found!',
+7 verbose unpublish   _id: '@ezhome/xxx@1.0.0' }
+8 verbose getPublishConfig undefined
+9 silly ls normalized @ezhome/xxx/1.0.0
+10 silly gentlyRm /Users/owais/.npm/@ezhome/xxx/1.0.0 is being purged
+11 verbose gentlyRm don't care about contents; nuking /Users/owais/.npm/@ezhome/xxx/1.0.0
+12 silly mapToRegistry name @ezhome/xxx
+13 silly mapToRegistry scope (from package name) @ezhome
+14 silly mapToRegistry registry http://52.88.183.32:8080/
+15 silly mapToRegistry uri http://52.88.183.32:8080/@ezhome%2fxxx
+16 verbose get GET as part of write; not caching result
+17 verbose request uri http://52.88.183.32:8080/@ezhome%2fxxx?write=true
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 11:07:10 PM
+20 verbose request using bearer token for auth
+21 verbose request id ea0f963bb55526a4
+22 http request GET http://52.88.183.32:8080/@ezhome%2fxxx?write=true
+23 http 200 http://52.88.183.32:8080/@ezhome%2fxxx?write=true
+24 silly get cb [ 200,
+24 silly get   { vary: 'Accept',
+24 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"DOIBDORT9I952WH6YCP9WJ7WB"',
+24 silly get     date: 'Mon, 07 Sep 2015 17:37:11 GMT',
+24 silly get     'content-type': 'application/json',
+24 silly get     'content-length': '1409',
+24 silly get     connection: 'keep-alive' } ]
+25 verbose get saving @ezhome/xxx to /Users/owais/.npm/52.88.183.32_8080/_40ezhome_252fxxx_3Fwrite_3Dtrue/.cache.json
+26 verbose unpublish removing attachments { shasum: '6005b851f4c0e6c871b738b85830fd1ed6e31308',
+26 verbose unpublish   tarball: 'http://52.88.183.32:8080/@/@ezhome/xxx/_attachments/xxx-1.0.0.tgz' }
+27 info unpublish No versions remain, removing entire package
+28 verbose request uri http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+29 verbose request sending authorization for write operation
+30 info attempt registry request try #1 at 11:07:11 PM
+31 verbose request using bearer token for auth
+32 http request DELETE http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+33 http 500 http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+34 info retry will retry, error on last attempt: Error: Registry returned 500 for DELETE on http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+35 info attempt registry request try #2 at 11:07:22 PM
+36 verbose request using bearer token for auth
+37 http request DELETE http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+38 http 500 http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+39 info retry will retry, error on last attempt: Error: Registry returned 500 for DELETE on http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+40 info attempt registry request try #3 at 11:08:23 PM
+41 verbose request using bearer token for auth
+42 http request DELETE http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+43 http 500 http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+44 verbose headers { 'content-type': 'application/json',
+44 verbose headers   'content-length': '17',
+44 verbose headers   date: 'Mon, 07 Sep 2015 17:38:23 GMT',
+44 verbose headers   connection: 'keep-alive' }
+45 verbose request invalidating /Users/owais/.npm/52.88.183.32_8080/_40ezhome_252fxxx on DELETE
+46 verbose stack Error: Registry returned 500 for DELETE on http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+46 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:263:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:241:14)
+46 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:171:14)
+46 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+46 verbose stack     at emitTwo (events.js:87:13)
+46 verbose stack     at Request.emit (events.js:172:7)
+46 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1073:14)
+46 verbose stack     at emitOne (events.js:82:20)
+46 verbose stack     at Request.emit (events.js:169:7)
+46 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1019:12)
+47 verbose statusCode 500
+48 verbose pkgid @ezhome/xxx
+49 verbose cwd /Users/owais/Desktop/xxx
+50 error Darwin 14.5.0
+51 error argv "/usr/local/bin/iojs" "/usr/local/bin/npm" "unpublish" "--force"
+52 error node v3.3.0
+53 error npm  v2.14.2
+54 error code E500
+55 error Registry returned 500 for DELETE on http://52.88.183.32:8080/@ezhome%2fxxx/-rev/1-b9d274a7ce1bdf2fd9643a4add9d9203
+56 error If you need help, you may report this error at:
+56 error     <https://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
